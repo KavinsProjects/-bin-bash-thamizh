@@ -2,7 +2,7 @@
 
 # Software Installation Guide for Ubuntu
 
-This guide provides steps to install Google Chrome and Visual Studio Code on Ubuntu.
+This guide provides steps to install the software on Ubuntu.
 
 ---
 
