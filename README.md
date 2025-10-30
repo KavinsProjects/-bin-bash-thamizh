@@ -55,7 +55,7 @@ Steps to install VS Code.
     ```bash
     sudo apt update
     ```
-2.  Go to the official download page and download the **.deb (Debian/Ubuntu)** package:
+2.  Go to the official download page and download the **.deb (Debian/Ubuntu)** packages:
     > https://code.visualstudio.com/download
     
     Your browser will save it to your `~/Downloads` folder.
