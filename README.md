@@ -80,3 +80,5 @@ Steps to install VS Code.
     sudo apt install -f
     ```
 6.  You're done! You can launch VS Code from your application menu or by typing `code` in the terminal.
+
+## 3. installing notepad++ 
