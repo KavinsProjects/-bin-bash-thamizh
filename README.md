@@ -81,4 +81,26 @@ Steps to install VS Code.
     ```
 6.  You're done! You can launch VS Code from your application menu or by typing `code` in the terminal.
 
+   ---
+
 ## 3. installing notepad++ 
+
+steps to install notepad++
+
+1.  Open your terminal (`Ctrl+Alt+T`) and update your package lists:
+    ```bash
+    sudo apt update
+    ```
+
+2. install snap 
+```bash
+sudo snap  install snapd
+```
+3. install snap core
+```bash
+sudo snap install core
+```
+4. notepad++
+```bash
+sudo snap install notepad-plus=plus
+```
