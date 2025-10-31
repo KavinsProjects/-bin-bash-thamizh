@@ -138,5 +138,6 @@
     ```bash
     sudo snap install notepad-plus-plus
     ```
+## hide nothing
 
 That's it bro 😎 — ippo notepad++ ready ah use panna mudiyum Ubuntu la!
