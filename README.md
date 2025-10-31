@@ -1,4 +1,4 @@
-![Terminal Tricks](https://media.tenor.com/bhewUhwCTYYAAAAi/tux-linux-tux.gif)
+
 
 # Software Installation Guide for Ubuntu
 
@@ -102,5 +102,5 @@ sudo snap install core
 ```
 4. notepad++
 ```bash
-sudo snap install notepad-plus=plus
+sudo snap install notepad-plus-plus
 ```
