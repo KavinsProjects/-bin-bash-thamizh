@@ -1,145 +1,142 @@
-## 📁 Basic System Commands
+# 💻 Basic System Commands (Basic Commands Tamil+English style)
 
-| Command              | Description                                                  |
-|----------------------|--------------------------------------------------------------|
-| `pwd`                | Prints the current working directory                         |
-| `uname -a`           | Displays OS version and system details                       |
-| `whoami`             | Shows the current username                                   |
-| `clear`              | Clears the terminal screen                                   |
-| `history`            | Lists all previously entered commands                        |
-| `sudo`               | Executes commands with superuser privileges                  |
-
----
-
-## ✍️ Working with the `vi` Text Editor
-
-| Action                        | Command / Shortcut                                     |
-|-------------------------------|--------------------------------------------------------|
-| Open a file                   | `vi hello.txt`                                         |
-| Enter insert mode             | Press `i`                                              |
-| Save and exit                 | Press `Esc`, then type `:wq` and hit `Enter`           |
-| Exit without saving           | Press `Esc`, then type `:q!` and hit `Enter`           |
-| Delete entire line            | In normal mode, type `dd`                              |
+| Command | Description (Tanglish) |
+|----------|-----------------------|
+| `pwd` | Current directory path kaamikkum (enga irukke nu sollum) |
+| `uname -a` | OS version details ellam kaamikkum |
+| `whoami` | Neenga login panna user name sollum |
+| `clear` | Terminal screen ah clean pannum |
+| `history` | Munnaadi use panna commands list kaamikkum |
+| `sudo` | Superuser permission kuduthu command run pannum (admin maari) |
 
 ---
 
-## 📂 File & Directory Management
+## ✍️ `vi` Text Editor la Work Panna
 
-| Command                        | Description                                           |
-|--------------------------------|-------------------------------------------------------|
-| `mkdir foldername`             | Creates a new directory                              |
-| `touch filename`               | Creates an empty file                                |
-| `rm filename`                  | Deletes the specified file                           |
-| `rm *.txt`                     | Deletes all `.txt` files in the current directory    |
-| `cat filename`                 | Displays the contents of a file                      |
-| `cp source.txt destination.txt`| Copies file to a new location                        |
-| `cat source.txt >> destination.txt` | Appends content to another file               |
-| `echo "your text"`             | Prints the text to the terminal                      |
-| `history >> commands.txt`      | Saves command history to a file                      |
+| Action | Command / Shortcut | Description (Tanglish) |
+|---------|-------------------|-------------------------|
+| Open a file | `vi hello.txt` | File open pannum |
+| Insert mode ku poganum | Press `i` | Typing mode la pogum |
+| Save & Exit | `Esc` press pannitu `:wq` type pannunga, then Enter |
+| Exit without save | `Esc` press pannitu `:q!` type pannunga |
+| Delete full line | Normal mode la `dd` type pannunga |
 
 ---
 
-# Software Installation Guide for Ubuntu
+## 📂 Files & Directory Management
 
-This guide provides steps to install the software on Ubuntu.
+| Command | Description (Tanglish) |
+|----------|----------------------|
+| `mkdir foldername` | New folder create pannum |
+| `touch filename` | Empty file create pannum |
+| `rm filename` | File delete pannum |
+| `rm *.txt` | Ella `.txt` files ah delete pannum current directory la |
+| `cat filename` | File oda content kaamikkum |
+| `cp source.txt destination.txt` | File copy pannum |
+| `cat source.txt >> destination.txt` | One file content another file ku append pannum |
+| `echo "your text"` | Terminal la text display pannum |
+| `history >> commands.txt` | Command history file la save pannum |
 
 ---
 
-## 1. Google Chrome Browser
+# 🧰 Software Install Guide for Ubuntu.
 
-Steps to install the stable version of Google Chrome.
+## 1️⃣ Google Chrome Install panna
 
-1.  Open your terminal (`Ctrl+Alt+T`).
-2.  Update your package lists:
+1. Terminal open pannunga (`Ctrl+Alt+T`).
+2. Package list update pannunga:
     ```bash
     sudo apt update
     ```
-3.  Navigate to your Downloads folder:
+3. Downloads folder ku poganum:
     ```bash
     cd ~/Downloads
     ```
-4.  Download the latest stable Chrome package (`.deb` file):
+4. Chrome `.deb` package download pannunga:
     ```bash
-    wget [https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb](https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb)
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
     ```
-5.  Install the package. **Method A** (recommended, handles dependencies) is generally preferred:
+5. Install pannuradhu ku two methods irukku 👇
 
-    **Method A:**
+    **Method A (Recommended – easy da!):**
     ```bash
     sudo apt install ./google-chrome-stable_current_amd64.deb
     ```
-    *If you use this method, you can skip step 6.*
 
     **Method B:**
     ```bash
     sudo dpkg -i google-chrome-stable_current_amd64.deb
     ```
 
-6.  (Only if you used Method B) If you encounter any dependency errors, run the following command to fix them:
+6. Dependency error vandha fix pannunga:
     ```bash
     sudo apt install -f
     ```
-7.  Launch Chrome from your application menu or by typing:
+
+7. Chrome open panna:
     ```bash
     google-chrome
     ```
 
 ---
 
-## 2. Visual Studio Code (VS Code)
+## 2️⃣ Visual Studio Code (VS Code) Install panna
 
-Steps to install VS Code.
-
-1.  Open your terminal (`Ctrl+Alt+T`) and update your package lists:
+1. Terminal open pannunga (`Ctrl+Alt+T`) → update package list:
     ```bash
     sudo apt update
     ```
-2.  Go to the official download page and download the **.deb (Debian/Ubuntu)** packages:
-    > https://code.visualstudio.com/download
-    
-    Your browser will save it to your `~/Downloads` folder.
 
-3.  Navigate to your Downloads folder in the terminal:
+2. Official website ku poi `.deb` package download pannunga:  
+   👉 https://code.visualstudio.com/download
+
+3. Downloads folder ku poganum:
     ```bash
     cd ~/Downloads
     ```
-4.  Install the package using `dpkg`. Make sure to replace `<filename>.deb` with the **exact name** of the file you just downloaded (e.g., `code_1.85.1-1702460838_amd64.deb`):
-    
+
+4. Install pannunga (filename replace pannunga with actual name):
     ```bash
-    # Replace <filename>.deb with the actual downloaded file name
     sudo dpkg -i <filename>.deb
     ```
-    *Alternatively, you can use `apt` which also handles dependencies:*
+
+   or better way 👇
     ```bash
-    # Replace <filename>.deb with the actual downloaded file name
     sudo apt install ./<filename>.deb
     ```
-5.  If you used `dpkg` and have any dependency issues, run:
+
+5. Dependency problem vandha fix pannunga:
     ```bash
     sudo apt install -f
     ```
-6.  You're done! You can launch VS Code from your application menu or by typing `code` in the terminal.
 
-   ---
+6. Done da! VS Code open panna just type pannunga:
+    ```bash
+    code
+    ```
 
-## 3. installing notepad++ 
+---
 
-steps to install notepad++
+## 3️⃣ Notepad++ Install panna (snap use pannuvom)
 
-1.  Open your terminal (`Ctrl+Alt+T`) and update your package lists:
+1. Terminal open pannunga (`Ctrl+Alt+T`) → update pannunga:
     ```bash
     sudo apt update
     ```
 
-2. install snap 
-```bash
-sudo snap  install snapd
-```
-3. install snap core
-```bash
-sudo snap install core
-```
-4. notepad++
-```bash
-sudo snap install notepad-plus-plus
-```
+2. Snap install panna:
+    ```bash
+    sudo snap install snapd
+    ```
+
+3. Snap core install panna:
+    ```bash
+    sudo snap install core
+    ```
+
+4. Finally Notepad++ install pannunga:
+    ```bash
+    sudo snap install notepad-plus-plus
+    ```
+
+That's it bro 😎 — ippo notepad++ ready ah use panna mudiyum Ubuntu la!
